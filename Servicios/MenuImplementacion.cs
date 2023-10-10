@@ -39,41 +39,41 @@ namespace calculadoraAritmetica.Servicios
             return opcion;
         }
 
-        public int multiplicacion(int num, int num1)
+        public double multiplicacion(double num, double num1)
         {
-            int operacion;
+            double operacion;
             operacion = num * num1;
             
             Console.WriteLine("El resultado de la operacion es: {0}", operacion);
             return operacion;
         }
 
-        public int PedirOperador()
+        public double PedirOperador()
         {
             //Pedimos los operadores
 
             Console.WriteLine("Introduce un operador: ");
-            int operador1 = Int32.Parse(Console.ReadLine());
+            double operador1 = Double.Parse(Console.ReadLine());
 
             return operador1;
 
             
         }
 
-        public int Resta(int num, int num1)
+        public double Resta(double num, double num1)
         {
-            int operacion;
+            double operacion;
             operacion = num - num1;
            
             Console.WriteLine("El resultado de la operacion es: {0}", operacion);
             return operacion;
         }
 
-        public int Suma(int num, int num1)
+        public double Suma(double num, double num1)
         {
 
 
-            int operacion;
+            double operacion;
             operacion= num +num1 ;
             
             Console.WriteLine("El resultado de la operacion es: {0}", operacion);
@@ -82,9 +82,9 @@ namespace calculadoraAritmetica.Servicios
             return operacion;
         }
 
-        public int Division(int num, int num1)
+        public double Division(double num, double num1)
         {
-            int operacion;
+            double operacion;
             operacion =num / num1;
             
             Console.WriteLine("El resultado de la operacion es: {0}", operacion);

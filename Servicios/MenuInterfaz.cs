@@ -23,15 +23,35 @@ namespace calculadoraAritmetica.Servicios
 
         public int mostrarMenuYSeleccion();
 
-        public int Suma(int num,int num1);
+        ///<summary>
+        ///Método que hace la suma y la muestra por consola.
+        /// </summary>
 
-        public int Resta(int num, int num1);
+        public double Suma(double num,double num1);
 
-        public int multiplicacion(int num, int num1);
+        ///<summary>
+        ///Método que hace la resta y la muestra por consola.
+        /// </summary>
 
-        public int Division(int num,int num1);
+        public double Resta(double num, double num1);
 
-        public int PedirOperador();
+        ///<summary>
+        ///Método que hace la multiplicación y la muestra por consola.
+        /// </summary>
+
+        public double multiplicacion(double num, double num1);
+        
+        ///<summary>
+        ///Método que hace la división y la muestra por consola.
+        /// </summary>
+
+        public double Division(double num,double num1);
+
+        ///<summary>
+        ///Método que pide el operador.
+        /// </summary>
+
+        public double PedirOperador();
 
     }
 }

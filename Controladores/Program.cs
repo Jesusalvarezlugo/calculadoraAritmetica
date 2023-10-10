@@ -44,7 +44,7 @@ namespace calculadoraAritmetica.Controladores
                 switch (opcionSeleccionada){
 
                     case 0:
-                        //pasamos cerrar menu a true para que cerrarMenu valga true y salga del bucle
+                        //pasamos cerrar menu a true para que cerrarMenu valga true y salga del bucle.
                         cerrarMenu = true;
                      break;
 
@@ -52,7 +52,7 @@ namespace calculadoraAritmetica.Controladores
                         Console.WriteLine("Ha introducido la opcion suma");
                         
 
-                        int operador1,operador2;
+                        double operador1,operador2;
                         
                         //Pedimos el valor para asignarlo a las variables
                         operador1 = mi.PedirOperador();
@@ -68,7 +68,7 @@ namespace calculadoraAritmetica.Controladores
                         Console.WriteLine("Ha introducido la opcion resta");
                         
 
-                        int operador3, operador4;
+                        double operador3, operador4;
 
                         operador3 = mi.PedirOperador();
                         operador4 = mi.PedirOperador();
@@ -80,7 +80,7 @@ namespace calculadoraAritmetica.Controladores
 
                         Console.WriteLine("Ha introducido la opcion multiplicación");
                         
-                        int operador5,operador6;
+                        double operador5,operador6;
 
                         operador5 = mi.PedirOperador();
                         operador6 = mi.PedirOperador();
@@ -94,7 +94,7 @@ namespace calculadoraAritmetica.Controladores
                     case 4:
                         Console.WriteLine("Ha introducido la opcion Division");
 
-                        int operador7, operador8;
+                        double operador7, operador8;
 
                         operador7 = mi.PedirOperador();
                         operador8 = mi.PedirOperador();
