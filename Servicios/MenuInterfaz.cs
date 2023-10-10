@@ -23,5 +23,15 @@ namespace calculadoraAritmetica.Servicios
 
         public int mostrarMenuYSeleccion();
 
+        public int Suma(int num,int num1);
+
+        public int Resta(int num, int num1);
+
+        public int multiplicacion(int num, int num1);
+
+        public int Division(int num,int num1);
+
+        public int PedirOperador();
+
     }
 }

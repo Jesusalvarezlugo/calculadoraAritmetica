@@ -8,6 +8,8 @@ namespace calculadoraAritmetica.Servicios
 {
     internal class MenuImplementacion : MenuInterfaz
     {
+       
+
         public void MensajeBienvenida()
         {
             string mensaje = "Bienvenido a la Calculadora Aritmética";
@@ -36,5 +38,61 @@ namespace calculadoraAritmetica.Servicios
 
             return opcion;
         }
+
+        public int multiplicacion(int num, int num1)
+        {
+            int operacion;
+            operacion = num * num1;
+            
+            Console.WriteLine("El resultado de la operacion es: {0}", operacion);
+            return operacion;
+        }
+
+        public int PedirOperador()
+        {
+            //Pedimos los operadores
+
+            Console.WriteLine("Introduce un operador: ");
+            int operador1 = Int32.Parse(Console.ReadLine());
+
+            return operador1;
+
+            
+        }
+
+        public int Resta(int num, int num1)
+        {
+            int operacion;
+            operacion = num - num1;
+           
+            Console.WriteLine("El resultado de la operacion es: {0}", operacion);
+            return operacion;
+        }
+
+        public int Suma(int num, int num1)
+        {
+
+
+            int operacion;
+            operacion= num +num1 ;
+            
+            Console.WriteLine("El resultado de la operacion es: {0}", operacion);
+
+
+            return operacion;
+        }
+
+        public int Division(int num, int num1)
+        {
+            int operacion;
+            operacion =num / num1;
+            
+            Console.WriteLine("El resultado de la operacion es: {0}", operacion);
+
+
+            return operacion;
+        }
+
+
     }
 }

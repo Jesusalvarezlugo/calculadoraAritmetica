@@ -44,67 +44,71 @@ namespace calculadoraAritmetica.Controladores
                 switch (opcionSeleccionada){
 
                     case 0:
+                        //pasamos cerrar menu a true para que cerrarMenu valga true y salga del bucle
                         cerrarMenu = true;
-                        break;
+                     break;
 
                     case 1:
                         Console.WriteLine("Ha introducido la opcion suma");
-                        //Pedimos los operadores
+                        
 
-                        Console.WriteLine("Introduce el primer operador: ");
-                        int operador1 = Int32.Parse(Console.ReadLine());
+                        int operador1,operador2;
+                        
+                        //Pedimos el valor para asignarlo a las variables
+                        operador1 = mi.PedirOperador();
+                        operador2= mi.PedirOperador();
 
-                        Console.WriteLine("Introduce el segundo operador: ");
-                        int operador2 = Int32.Parse(Console.ReadLine());
-
-                        Console.WriteLine("El resultado de la operacion es: {0}",operador1+operador2);
-                        break;
+                        //Mostramos el resultado de la operacion
+                        mi.Suma(operador1,operador2);
+                        
+                     break;
 
                     case 2:
 
                         Console.WriteLine("Ha introducido la opcion resta");
-                        //Pedimos los operadores
+                        
 
-                        Console.WriteLine("Introduce el primer operador: ");
-                        int operador3 = Int32.Parse(Console.ReadLine());
+                        int operador3, operador4;
 
-                        Console.WriteLine("Introduce el segundo operador: ");
-                        int operador4 = Int32.Parse(Console.ReadLine());
+                        operador3 = mi.PedirOperador();
+                        operador4 = mi.PedirOperador();
 
-                        Console.WriteLine("El resultado de la operacion es: {0}", operador3 - operador4);
-                        break;
+                        mi.Resta(operador3,operador4);
+                     break;
 
                     case 3:
 
                         Console.WriteLine("Ha introducido la opcion multiplicación");
-                        //Pedimos los operadores
+                        
+                        int operador5,operador6;
 
-                        Console.WriteLine("Introduce el primer operador: ");
-                        int operador5 = Int32.Parse(Console.ReadLine());
+                        operador5 = mi.PedirOperador();
+                        operador6 = mi.PedirOperador();
 
-                        Console.WriteLine("Introduce el segundo operador: ");
-                        int operador6 = Int32.Parse(Console.ReadLine());
 
-                        Console.WriteLine("El resultado de la operacion es: {0}", operador5 * operador6);
+                        mi.multiplicacion(operador5, operador6);
                         
 
-                        break;
+                     break;
 
                     case 4:
-                        Console.WriteLine("Ha introducido la opcion multiplicación");
-                        //Pedimos los operadores
+                        Console.WriteLine("Ha introducido la opcion Division");
 
-                        Console.WriteLine("Introduce el primer operador: ");
-                        int operador5 = Int32.Parse(Console.ReadLine());
+                        int operador7, operador8;
 
-                        Console.WriteLine("Introduce el segundo operador: ");
-                        int operador6 = Int32.Parse(Console.ReadLine());
+                        operador7 = mi.PedirOperador();
+                        operador8 = mi.PedirOperador();
 
-                        Console.WriteLine("El resultado de la operacion es: {0}", operador5 * operador6);
+                        mi.Division(operador7, operador8);
+                     break;
+
+                    default:
+                        Console.WriteLine("[INFO] opcion seleccionada no valida. Introduzca una de las opciones mostradas.");
                         break;
 
-                    case 5:
-                        break;
+
+
+                    
                 }
         
             }
