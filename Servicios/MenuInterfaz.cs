@@ -27,25 +27,7 @@ namespace calculadoraAritmetica.Servicios
         ///Método que hace la suma y la muestra por consola.
         /// </summary>
 
-        public double Suma(double num,double num1);
-
-        ///<summary>
-        ///Método que hace la resta y la muestra por consola.
-        /// </summary>
-
-        public double Resta(double num, double num1);
-
-        ///<summary>
-        ///Método que hace la multiplicación y la muestra por consola.
-        /// </summary>
-
-        public double multiplicacion(double num, double num1);
         
-        ///<summary>
-        ///Método que hace la división y la muestra por consola.
-        /// </summary>
-
-        public double Division(double num,double num1);
 
         ///<summary>
         ///Método que pide el operador.

@@ -19,6 +19,7 @@ namespace calculadoraAritmetica.Controladores
             //llamada al metodo que muestra mensaje de bienvenida a la calculadora.
 
             MenuInterfaz mi=new MenuImplementacion();
+            operacionesInterfaz oi = new operacionesImplementacion();
 
             mi.MensajeBienvenida();
 
@@ -59,7 +60,7 @@ namespace calculadoraAritmetica.Controladores
                         operador2= mi.PedirOperador();
 
                         //Mostramos el resultado de la operacion
-                        mi.Suma(operador1,operador2);
+                        oi.Suma(operador1,operador2);
                         
                      break;
 
@@ -73,7 +74,7 @@ namespace calculadoraAritmetica.Controladores
                         operador3 = mi.PedirOperador();
                         operador4 = mi.PedirOperador();
 
-                        mi.Resta(operador3,operador4);
+                        oi.Resta(operador3,operador4);
                      break;
 
                     case 3:
@@ -86,7 +87,7 @@ namespace calculadoraAritmetica.Controladores
                         operador6 = mi.PedirOperador();
 
 
-                        mi.multiplicacion(operador5, operador6);
+                        oi.multiplicacion(operador5, operador6);
                         
 
                      break;
@@ -99,7 +100,7 @@ namespace calculadoraAritmetica.Controladores
                         operador7 = mi.PedirOperador();
                         operador8 = mi.PedirOperador();
 
-                        mi.Division(operador7, operador8);
+                        oi.Division(operador7, operador8);
                      break;
 
                     default:
